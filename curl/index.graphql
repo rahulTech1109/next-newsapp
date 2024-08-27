@@ -1,0 +1,35 @@
+type ArticlesEntry {
+  author: String
+  """
+  Field "content" is defined as JSON since its value was always 'null'
+  """
+  content: JSON
+  """
+  Field "description" is defined as JSON since its value was always 'null'
+  """
+  description: JSON
+  publishedAt: DateTime
+  source: Source
+  title: String
+  url: String
+  """
+  Field "urlToImage" is defined as JSON since its value was always 'null'
+  """
+  urlToImage: JSON
+}
+
+type Root {
+  articles: [ArticlesEntry]
+  status: String
+  totalResults: Int
+}
+
+type Source {
+  id: String
+  name: String
+}
+
+type Query {
+  myQuery(apiKey: String, country: String): Root
+    @rest(endpoint: "https://newsapi.org/v2/top-headlines")
+}
