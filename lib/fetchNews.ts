@@ -3,7 +3,7 @@ import { gql } from 'graphql-request';
 // Define the GraphQL query
 const query =  gql`
 query MyQuery   {
-  myQuery(country: "us", apiKey: "64a80c3d10914887b605496d4746ee53") {
+  myQuery(country: "us", apiKey: "YOUR_API_KEY") {
     status
     totalResults
     articles {
