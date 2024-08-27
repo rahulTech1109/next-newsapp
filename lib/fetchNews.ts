@@ -21,8 +21,8 @@ query MyQuery   {
 
 // Define your API endpoint and API key
 const endpoint = 'https://santamariaii.us-east-a.ibm.stepzen.net/api/illocutionary-anteater/__graphql';
-const STEPZEN_API_KEY = 'santamariaii::local.net+1000::010f7b4d6483cc733a972774f641af5e0620285faae265a214b7f530ab54dd14'; 
-const NEWS_DATA_API_KEY = '64a80c3d10914887b605496d4746ee53'; 
+const STEPZEN_API_KEY = 'YOUR_STEPZEN_API_KEY'; 
+const NEWS_DATA_API_KEY = 'YOUR_API_KEY'; 
 
 // Function to fetch news
 const fetchNews = async (
